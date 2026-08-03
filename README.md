@@ -48,97 +48,11 @@ The project was developed to strengthen practical knowledge of:
 - PreparedStatement
 
 
- 📂 Folder Structure
+ 📂 Folder Structure & 🔄 Project Flow &  🗄 Database Schema
 
+![Project Visualization](project flow.jpeg)
 
-src
-│
-├── DBConnection.java
-├── RegisterNewUser.java
-├── LoginExistingUser.java
-├── ForgotPassword.java
-├── OTPGenerationAndVerificationProcess.java
-├── RealTimeApplicationDriver.java
-│
-└── exceptionCollections
-    ├── DuplicateEmailException.java
-    ├── DuplicatePhoneNumberException.java
-    ├── PasswordMismatchException.java
-    ├── InvalidCredentialsException.java
-    ├── InvalidOTPException.java
-    └── PasswordResetFailedException.java
-
-
-
- 🔄 Project Flow
-
-
-                          START
-                            │
-                            ▼
-                   Display Main Menu
-                            │
-      ┌─────────────────────┼─────────────────────┐
-      │                     │                     │
-      ▼                     ▼                     ▼
- Register User          Login User        Forgot Password
-      │                     │                     │
-      ▼                     ▼                     ▼
- Enter Details      Email / Phone        Enter Email /
-                                          Phone Number
-      │                     │                     │
-      ▼                     ▼                     ▼
- Validate Data      Validate User         Verify User
-      │                     │                     │
-      ▼                     ▼                     ▼
- Duplicate Check     Password Check       Generate OTP
-      │                     │                     │
-  ┌───┴────┐                │                     ▼
-  │        │                │               Enter OTP
- Yes       No               │                     │
-  │        │                ▼               OTP Valid?
-  ▼        ▼          Login Success       ┌────┴─────┐
-Throw   Save User                         │          │
-Exception                                  No        Yes
-                                           │          │
-                                           ▼          ▼
-                                   Invalid OTP   Enter New Password
-                                                       │
-                                                       ▼
-                                               Confirm Password
-                                                       │
-                                               Password Match?
-                                                 ┌─────┴─────┐
-                                                 │           │
-                                                No          Yes
-                                                 │           │
-                                                 ▼           ▼
-                                         PasswordMismatch  Update Password
-                                             Exception          │
-                                                                ▼
-                                                     Password Reset Success
-                                                                │
-                                                                ▼
-                                                               END
-
-
- 🗄 Database Schema
-
-### Database Name
-  whatsapp
-
-### Table Name
-  user
-
-### Columns
-
-- **id** → INT (Primary Key, Auto Increment)
-- **username** → VARCHAR(100)
-- **email** → VARCHAR(100) (Unique)
-- **phone_no** → BIGINT (Unique)
-- **password** → VARCHAR(100)
-
-
+   
 
  ▶️ How to Run the Project
 
