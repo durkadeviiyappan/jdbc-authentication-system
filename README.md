@@ -104,7 +104,7 @@ Select the required option from the main menu.
 
 
 ### Login Success
-![Login Success](login.png)
+![Login Success](./login.png)
 
 ```
 
