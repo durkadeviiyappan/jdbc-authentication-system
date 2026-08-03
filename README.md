@@ -50,7 +50,7 @@ The project was developed to strengthen practical knowledge of:
 
 ### 📂 Folder Structure & 🔄 Project Flow &  🗄 Database Schema
 
-![Project Visualization](project%20flow.jpeg)
+![Project Visualization](project-flow.jpeg)
 
    
 
@@ -104,7 +104,7 @@ Select the required option from the main menu.
 
 
 ### Login Success
-![Login Success](./login.png.png)
+![Login Success](login.png)
 
 ```
 
@@ -120,7 +120,7 @@ Select the required option from the main menu.
 ---
 
 ### Password Reset Success
-    ![Password Reset Success](./password-reset-database.png.png)
+    ![Password Reset Success](password-reset-database.png)
 
 ```
 
