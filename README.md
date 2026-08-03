@@ -50,7 +50,7 @@ The project was developed to strengthen practical knowledge of:
 
  📂 Folder Structure & 🔄 Project Flow &  🗄 Database Schema
 
-![Project Visualization](project flow.jpeg)
+![Project Visualization](projectflow.jpeg)
 
    
 
